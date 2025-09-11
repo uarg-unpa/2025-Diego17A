@@ -1,0 +1,15 @@
+public class TestPersona()
+    public static void main (String arg[]){
+        //declaracion de objeto
+        Persona persona1
+        //creacion del objeto
+        persona1=newPersona ("Franco","Herrera","42","12344567");
+        persona2=newPersona ("Diego","javier","35","32165498");
+        // invocando un metodo
+        persona.mayordeedad ();
+        // mostrar el resultado
+        // cambio prueba guardado
+
+
+
+    }
