@@ -40,9 +40,9 @@ public class TestFecha{
         System.out.println(fecha1.obtenerMes());
         System.out.println ("mes" + fecha1.getmes()+ "( "+ fecha1.obtenerMes() +")");
 
+        Fecha mayor = fecha1.mayorAnio(fecha2);
+        System.out.println ("La fecha con mayot año es: "+mayor);
+
         scanner.close();
-        
-        
-       
     }
 }

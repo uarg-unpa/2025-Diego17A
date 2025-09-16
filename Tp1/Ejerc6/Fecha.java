@@ -98,7 +98,18 @@ public class Fecha {
     }
     public String toString() {
         return "["+this.dia+"]["+this.mes+"]["+this.anio+"]";
+    }  
+    // metodo de ejerc 7 Mostrar en formato (dd/mm/aaaa) 
+    //aquella fecha, de ambas, que sea de mayor año.
+    public Fecha mayorAnio(Fecha fecha2){
+        if ( this.anio > fecha2.getanio()){
+            return this;
+        }
+        else{
+           return fecha2;
+        }
     }
 }
+
 
        
