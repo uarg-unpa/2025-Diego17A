@@ -3,21 +3,23 @@
 //puede llegar a su destino (combustible >1000), acelerar (aumentar la velocidad) 
 //y mostrar un informe de mision
 
-Public class Nave {
+public class Nave {
     //atributos
-    String nombre;
-    int velMax;
-    int combRest;
-    String destinos;
+    private String nombre;
+    private int velMax;
+    private int combRest;
+    private String destinos;
+    
+
     //contructor
     public Nave (String nombre, int velMax, int combRest, String destinos){
         //inicializar atributos del constructor
-        this.nombre=nombre;
+        this.nombre= nombre;
         this.velMax=velMax;
         this.combRest=combRest;
         this.destinos=destinos;
     }   
     //metodos gets y sets
-    public String get   
+       
 
 }

@@ -1,7 +1,9 @@
-public static void main (String arg []){
+public class Pruebanave
+    public static void main (String arg []){
     // declaracion del objeto
-    Nave nave1
+    Nave nave1;
     //creacion del objeto 
-    nave1=newNave ("estrelladelamuerte",1000,5000,"Marte" )
+    nave1 = new Nave ("estrelladelamuerte",1000,5000,"Marte" );
+
 
 }
