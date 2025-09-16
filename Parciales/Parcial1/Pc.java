@@ -42,7 +42,7 @@ public class Pc {
         return "["+this.marca+"]["+this.procesador+"]["+this.precio+"]["+this.ram+"]";
 
     }
-    public  double descPrecio (double desc){
+    public  double aplicarDescuento (double desc){
         double precionuevo;
         precionuevo = precio - desc;
         return precionuevo;
@@ -52,7 +52,15 @@ public class Pc {
         ramAct = ram + 5;
         return ramAct;   
     }
- }    
+    public boolean mayorRam (Pc p2){
+        if (this.getram() > p2.getram()){
+        return true;
+        }
+        else{
+            return false;
+        }  
+    }
+}    
      
     
 

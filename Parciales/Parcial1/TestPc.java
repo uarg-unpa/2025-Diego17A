@@ -38,12 +38,15 @@ public class TestPc {
        
         System.out.println("Ingrese descuento a aplicar en PC1:");
         double desc = scanner.nextDouble();
-        System.out.println("El precio nuevo de PC1 :" + p1.descPrecio(desc));
+        System.out.println("El precio nuevo de PC1 :" + p1.aplicarDescuento(desc));
 
         System.out.println("Actualizar la memoria RAM en PC2");
-        System.out.println("Nuevo valor de memoria RAM:" + p2.actualizarRam());
+        System.out.println("Nuevo valor de memoria RAM de PC2:" + p2.actualizarRam() + "GB");
 
+    
+        System.out.println ("la PC1 tiene mayor RAM que PC2:" + mayorRam);
 
+        scanner.close();
     }
 
 }
