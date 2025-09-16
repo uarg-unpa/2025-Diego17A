@@ -34,7 +34,7 @@ public class Hora{
     // metodo set para cambiar los mm por separado
     //con validacion   
     public void setmm (int mm){
-        if (00 >=0 && mm <=59){
+        if (mm >=0 && mm <=59){
             this.mm = mm;
         }
         else{
