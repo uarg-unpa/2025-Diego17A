@@ -3,6 +3,7 @@
 //puede llegar a su destino (combustible >1000), acelerar (aumentar la velocidad) 
 //y mostrar un informe de mision
 
+
 public class Nave {
     //atributos
     private String nombre;
