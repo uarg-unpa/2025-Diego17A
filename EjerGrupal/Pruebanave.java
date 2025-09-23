@@ -6,5 +6,5 @@ public class Pruebanave{
     //creacion del objeto 
     Nave nave1 = new Nave ("estrelladelamuerte",1000,5000,"Marte" );
     }    
-
+    
 }
