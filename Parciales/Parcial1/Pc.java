@@ -49,7 +49,7 @@ public class Pc {
     }    
     public  void aplicarDescuento2 (double desc2){
         //double precionuevo2;
-       // precionuevo2 = this.precio - desc2;   
+        //precionuevo2 = this.precio - desc2;   
         //setprecio(precionuevo2);
         this.precio = this.precio - desc2;
     }    
@@ -60,7 +60,7 @@ public class Pc {
     }
     public boolean mayorRam (Pc p2){
         if (this.getram() > p2.getram()){
-        return true;
+            return true;
         }
         else{
             return false;
