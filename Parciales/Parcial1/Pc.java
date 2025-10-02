@@ -26,7 +26,7 @@ public class Pc {
     public String getmprocesador(){
         return this.procesador;
     }
-    public void setmarca (double precio){
+    public void setprecio (double precio){
         this.precio = precio;
     }
     public double getprecio(){
@@ -46,6 +46,12 @@ public class Pc {
         double precionuevo;
         precionuevo = precio - desc;
         return precionuevo;
+    }    
+    public  void aplicarDescuento2 (double desc2){
+        //double precionuevo2;
+       // precionuevo2 = this.precio - desc2;   
+        //setprecio(precionuevo2);
+        this.precio = this.precio - desc2;
     }    
     public int actualizarRam (){
         int ramAct;
