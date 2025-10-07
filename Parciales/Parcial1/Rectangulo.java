@@ -23,6 +23,7 @@ public class Rectangulo {
     public double calcularArea (){
         double area = base * altura;
         return area;
+        // return base * altura (otra forma)
     }
     public double calcularPerimetro (){
         double perimetro = ((2*base) + (2*altura));
