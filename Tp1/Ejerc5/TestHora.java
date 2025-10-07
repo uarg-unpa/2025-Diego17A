@@ -26,7 +26,7 @@ public class TestHora {
         //crear objeto 1 y inicilaizar un objeto
         Hora hora1 = new Hora(hs1, mm1, sg1);
 
-        // pedir datos para crear objeto 
+        // pedir datos para crear objeto 2
         System.out.println("Ingrese datos de segunda hora");
         System.out.println("Ingrese hora:");
         int hs2=scanner.nextInt();
