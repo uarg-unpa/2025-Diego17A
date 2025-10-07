@@ -30,7 +30,7 @@ public class TestProducto {
 
         System.out.println("Ingrese cantidad a vender del producto 1:");
         int cantidad = scanner.nextInt();
-        if (P1.hayStock(cantidad)){
+        if (P1.hayStock(cantidad)){ // verificar que hay stock
             P1.vender(cantidad);
             System.out.println("se vendio la cantidad, \nstock actualizado: "+P1.getcantidadenstock());
         } 
@@ -52,6 +52,7 @@ public class TestProducto {
         else{
             System.out.println("tienen el mismo stock");
         } 
+        scanner.close();
     }
 }
 

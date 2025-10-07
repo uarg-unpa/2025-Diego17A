@@ -26,7 +26,10 @@ public class TestPersona {
         p1.setaltura(1.75);
 
         // Crear persona con constructor con nombre
-        Persona p2 = new Persona("María");
+        //Persona p2 = new Persona ("carla"); (= a linea 30/31/32)
+        System.out.println("Coloque el nombre de la persona 2:");
+        String nombre2 = scanner.nextLine();
+        Persona p2 = new Persona(nombre2);
         p2.setedad(16);
         //p2.setdni("87654321A");
         p2.setsexo('M');
@@ -39,6 +42,8 @@ public class TestPersona {
 
         System.out.println(p2);
         System.out.println("¿Es mayor de edad? " + p2.esMayorDeEdad());
+        
+        scanner.close();
     }
 }
 

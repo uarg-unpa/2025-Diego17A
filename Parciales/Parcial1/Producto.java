@@ -38,8 +38,8 @@ public class Producto {
     public void aumentarStock (int cantidad2){
         this.cantidadenstock = this.cantidadenstock + cantidad2;
     }
-    public boolean tieneMasStockQue ( Producto P){
-        return (this.cantidadenstock > P.cantidadenstock);
+    public boolean tieneMasStockQue ( Producto p){
+        return (this.cantidadenstock > p.cantidadenstock);
     }
 
 }

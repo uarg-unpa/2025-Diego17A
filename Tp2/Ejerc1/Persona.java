@@ -73,7 +73,7 @@ public class Persona {
         }
      }
      //metodo comprobar sexo
-     private void comprobarSexo(char sexo) {
+     public void comprobarSexo (char sexo){
         if (sexo == 'H' || sexo == 'M') {
             this.sexo = sexo;
         } else {
