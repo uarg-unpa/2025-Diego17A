@@ -19,7 +19,7 @@ public class TestVehiculo {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print ("Ingrese datos del vehiculo:" + "\nMarca:");
+        System.out.print ("Ingrese datos del primer vehiculo:" + "\nMarca:");
         String marca = scanner.nextLine();
         System.out.print ("Modelo:");
         String modelo = scanner.nextLine();
@@ -32,7 +32,7 @@ public class TestVehiculo {
 
         scanner.nextLine();
 
-        System.out.print ("Ingrese datos del vehiculo:" + "\nMarca:");
+        System.out.print ("Ingrese datos del segundo vehiculo:" + "\nMarca:");
         String marca2 = scanner.nextLine();
         System.out.print ("Modelo:");
         String modelo2 = scanner.nextLine();
