@@ -24,7 +24,7 @@ public class TestElector {
         String matricula = scanner.nextLine();
         System.out.println ("clase:");
         int clase = scanner.nextInt();
-        System.out.println ("domicilio:");
+        System.out.print ("domicilio:");
         String domicilio = scanner.nextLine();
 
         Elector E1 = new Elector(nombre,apellido,matricula,clase,domicilio);
@@ -91,10 +91,13 @@ public class TestElector {
         
         scanner.nextLine();
 
-        System.out.print(E1);
-        System.out.print(E2);
-        System.out.print(E3);
-        System.out.print(E4); System.out.print(E5);
+        System.out.println(E1);
+        System.out.println(E2);
+        System.out.println(E3);
+        System.out.println(E4);
+        System.out.println(E5);
+
+        scanner.close();
 
     }
 }
