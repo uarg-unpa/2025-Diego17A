@@ -1,9 +1,9 @@
 package Clases.Pilas;
 
 public class PilaEnteros {
-    private int[] elementos; // Array para almacenar los elementos
-    private int cima;
-    private final int MAX = 10; // Capacidad máxima de la pila
+    private int[] elementos; // Array (vector) para almacenar los elementos
+    private int cima;  // ultimo elemento insertado
+    private final int MAX = 5; // Capacidad máxima de la pila
 
     // Constructor: inicializa el array y la cima
     public PilaEnteros() {
@@ -14,14 +14,15 @@ public class PilaEnteros {
 
     // Verifica si la pila está vacía
     public boolean estaVacia() {
-        // Completar: devolver true si cima indica que la pila está vacía
-            return (cima == -1);
+        // Completar: devolver true si cima indica que la pila está vacía 
+        return (cima == -1);
     }
 
     // Verifica si la pila está llena
     public boolean estaLlena() {
         // Completar: devolver true si cima está en el límite del array
-        return (cima == MAX - 1);
+        return (cima == MAX -1);
+    
     }
 
     // Agrega un elemento en la cima (push)

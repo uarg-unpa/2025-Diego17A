@@ -38,7 +38,7 @@ public class MenuPila {
                     }
                     break;
 
-                         case 4: // Verificar estado
+                 case 4: // Verificar estado
                     System.out.println("¿Vacía? " + pila.estaVacia() + " | ¿Llena? " + pila.estaLlena());
                     break;
 
