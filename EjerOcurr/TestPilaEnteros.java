@@ -14,6 +14,7 @@ public class TestPilaEnteros{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         PilaEnteros pila = new PilaEnteros();
+        
         int opcion;
 
         do {
@@ -49,7 +50,7 @@ public class TestPilaEnteros{
                 case 3: //ocurrencia de un elemento
                     System.out.print("Ingrese un número: ");
                     int num = sc.nextInt();
-                    System.out.println ("El elemento" + num +" se repite:" + pila.cantOcurrencias(num)+"veces");
+                    System.out.println ("El elemento" + num +" se repite: " + pila.cantOcurrencias(num)+" veces");
                     break;                
 
                 case 4: // Verificar estado
