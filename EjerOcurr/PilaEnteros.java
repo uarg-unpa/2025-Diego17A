@@ -3,7 +3,7 @@ package EjerOcurr;
 public class PilaEnteros {
     private int[] elementos;
     private int cima;
-    private final int max = 8;
+    private final int max = 5;
 
     public PilaEnteros(){
         elementos = new int [max];
@@ -23,5 +23,14 @@ public class PilaEnteros {
         int aux = elementos [cima];
         cima--;
         return aux;
+    }
+    public int cantOcurrencias (int elemento){
+        int contador = 0;
+        for(int i=0; i <= cima;i++){
+            if (this.elementos[i] == elemento){
+                contador ++;
+            }
+        }
+        return contador;
     }
 }
