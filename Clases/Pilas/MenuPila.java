@@ -12,6 +12,7 @@ public class MenuPila {
             System.out.println("\n=== MENÚ DE PILA ===");
             System.out.println("1. Meter elemento");
             System.out.println("2. Sacar elemento");
+            System.out.println("3. Mostrar elementos");
             System.out.println("4. Verificar estado (vacía/llena)");
             System.out.println("0. Salir");
             System.out.print("Opción: ");
@@ -38,7 +39,12 @@ public class MenuPila {
                     }
                     break;
 
-                 case 4: // Verificar estado
+                case 3: 
+                    System.out.println("Los elementos de la pila son: ");
+                    pila.mostrar(); 
+                    break;
+
+                case 4: // Verificar estado
                     System.out.println("¿Vacía? " + pila.estaVacia() + " | ¿Llena? " + pila.estaLlena());
                     break;
 

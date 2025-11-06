@@ -39,4 +39,18 @@ public class PilaEnteros {
         cima --;
         return aux;
     }
+     public void mostrar(){
+        PilaEnteros aux = new PilaEnteros();
+        int elemento, elemento2;
+        while(!estaVacia()){
+            elemento = sacar();
+            System.out.print(elemento + "");
+            aux.meter(elemento);    
+        }
+        while(!aux.estaVacia()){
+            elemento2 = aux.sacar();
+            meter (elemento2);
+            //insertar(aux.borrar());
+        }
+    }
 } 
