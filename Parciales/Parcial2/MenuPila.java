@@ -13,12 +13,13 @@ public class MenuPila {
             System.out.println("\n=== MENÚ DE PILA ===");
             System.out.println("1. Meter elemento en pila 1");
             System.out.println("2. Sacar elemento dn pila 1");
-            System.out.println("3. Mostrar elementos");
+            System.out.println("3. Mostrar elementos pila 1");
             System.out.println("4. Verificar estado (vacía/llena)");
             System.out.println("5. Contador de pares");
             System.out.println("6. Meter elemento en pila 2");
             System.out.println("7. Sacar elemento en pila 2");
             System.out.println("8. Mayor elementos pares");
+            System.out.println("9. Mostrar elementos pila 2");
             System.out.println("0. Salir");
             System.out.print("Opción: ");
             opcion = sc.nextInt();
@@ -45,7 +46,7 @@ public class MenuPila {
                     break;
 
                 case 3: 
-                    System.out.println("Los elementos de la pila son: ");
+                    System.out.println("Los elementos de la pila 1 son: ");
                     P1.mostrar(); 
                     break;
 
@@ -78,6 +79,11 @@ public class MenuPila {
                     break;    
                 case 8:
                 System.out.println("La pila 1 tiene mas elementos pares que la pila 2: "+ P1.masElementosPares(P2));     
+                    break;
+            
+                case 9: // Verificar estado
+                    System.out.println("Los elementos de la pila 2 son: ");
+                    P2.mostrar(); 
                     break;
 
                 case 0: // Salir

@@ -24,5 +24,19 @@ public class PilaChar {
         cima--;
         return aux;
     }
+    public void mostrar(){
+        PilaChar aux = new PilaChar();
+        char elemento, elemento2;
+        while(!estavacia()){
+            elemento = sacar();
+            System.out.print(elemento + "");
+            aux.meter(elemento);    
+        }
+        while(!aux.estavacia()){
+            elemento2 = aux.sacar();
+            meter (elemento2);
+            //insertar(aux.borrar());
+        }
+    }
     
 }
