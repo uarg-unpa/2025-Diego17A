@@ -1,3 +1,9 @@
+//Crear un metodo dentro de la clase pila de enteros,
+//que reciba otra pila P1 calcule y retorne verdadero 
+//si la pila tiene mas elementos pares que la p2
+//que se envie por paramtetro. o falso si p2 tiene mas pares
+//las pilas deben quedar como estaban orginalmente
+
 package Parciales.Parcial2;
 
 import java.util.Scanner;

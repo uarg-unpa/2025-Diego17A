@@ -1,7 +1,7 @@
 package Parciales.Parcial2;
 
 public class ColaFFChar {
-    private final int maxcola=11;
+    private final int maxcola = 11;
     private int frente, ultimo;
     private char []elementos;
     

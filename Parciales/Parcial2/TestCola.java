@@ -1,3 +1,7 @@
+//Desde el metodo main, dadas dos pilas de caracteres iguales
+//generar una cola de caracteres resultantes de intercalar 
+//los elmenentos de ambas pilas
+//y que las pilas queden como estaban originalmente
 package Parciales.Parcial2;
 
 import java.util.Scanner;
@@ -84,7 +88,7 @@ public class TestCola{
                     break;
 
                 case 7: // mostrar elementos p2
-                    System.out.println("Los caracteres de la pila 1 son: ");
+                    System.out.println("Los caracteres de la pila 2 son: ");
                     P2.mostrar(); 
                     break;   
                 
@@ -107,8 +111,10 @@ public class TestCola{
                         Q1.insertar(aux);
                         auxpila.meter(aux);
                         aux2 = P2.sacar();
-                        Q1.insertar(aux);
-                        auxpila2.meter(aux);
+                        //Q1.insertar(aux); error en el parcial lpm
+                        Q1.insertar(aux2);
+                        //auxpila2.meter(aux); error en el parcial lpm 
+                        auxpila2.meter(aux2);
                     }
                     while(!auxpila.estavacia()){
                         aux = auxpila.sacar();

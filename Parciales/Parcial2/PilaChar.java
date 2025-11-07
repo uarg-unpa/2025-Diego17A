@@ -3,7 +3,7 @@ package Parciales.Parcial2;
 public class PilaChar {
     private char[] elementos;
     private int cima;
-    private final int max= 5;
+    private final int max = 5;
 
     public PilaChar(){
         elementos = new char [max];
