@@ -57,7 +57,8 @@ public class PilaEnteros {
         return contador;    
     }
     public boolean masElementosPares (PilaEnteros a){
-        if (this.contadorPares() < a.contadorPares()){
+        //if (this.contadorPares() < a.contadorPares()){ error lpm
+        if (this.contadorPares() > a.contadorPares())    
             return true;
         }
         else{
