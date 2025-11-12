@@ -15,7 +15,7 @@ public class TestEmpresa2 {
 
         Scanner scanner = new Scanner(System.in);
         int opcion;
-        String emp1, emp2;
+        String emp1;
 
         System.out.println("------Carga de datos de Empleados------");
         System.out.println ("Ingrese datos del Empleado 1 \nNombre:");
