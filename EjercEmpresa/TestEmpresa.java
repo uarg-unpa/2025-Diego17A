@@ -10,14 +10,12 @@ package EjercEmpresa;
 
 import java.util.Scanner;
 
-import EjerElector.Elector;
-
 public class TestEmpresa {
     public static void main (String[] args){
 
         Scanner scanner = new Scanner(System.in);
         
-        System.out.println("------Carga de datos Empleados------");
+        System.out.println("------Carga de datos de Empleados------");
         System.out.println ("Ingrese datos del Empleado 1 \nNombre:");
         String nombre = scanner.nextLine();
         System.out.println ("N° de legajo:");
@@ -56,5 +54,41 @@ public class TestEmpresa {
         System.out.println(A2);
         System.out.println(A3);
 
-    }    
-}
+        System.out.println(" ----COMPARADOR SUELDOS----\nSeleccione empleado a comparar (opciones A1, A2, A3)");
+        System.out.println ("Ingrese primer Empleado");
+        String emp1 = scanner.nextLine();
+        System.out.println ("Ingrese segundo Empleado");
+        String emp2 = scanner.nextLine();
+        if (emp1.equals("A1") & !emp2.equals("A1")){
+            if ( emp2.equals("A2")){
+                System.out.println("El empleado"+ emp1 +" gana mas que el empleado" +emp2 + A1.ganaMasQue(A2));
+            }
+            else{
+                System.out.println("El empleado"+ emp1 +" gana mas que el empleado" +emp2 + A1.ganaMasQue(A3));
+            }    
+        }
+        else{
+            if(emp1.equals("A2")& !emp2.equals("A2")){
+                if ( emp2.equals("A2")){
+                System.out.println("El empleado"+ emp1 +" gana mas que el empleado" + emp2 + A2.ganaMasQue(A1));
+                }
+                else{
+                System.out.println("El empleado"+ emp1 +" gana mas que el empleado" + emp2 + A2.ganaMasQue(A3));
+                }  
+            }
+            if( emp1.equals("A3") & !emp2.equals("A3")){
+                if( emp2.equals("A1")){
+                    System.out.println("El empleado " + emp1 +" gana mas que el empleado " + emp2 + A3.ganaMasQue(A1));
+                }
+                else{
+                    System.out.println("El empleado "+ emp1 +" gana mas que el empleado " + emp2 + A3.ganaMasQue(A2)); 
+                }    
+            }
+            else{
+                System.out.println("Error: el empleado seleccionado no existe"); 
+            }
+        } 
+        scanner.close();
+    }
+}    
+
