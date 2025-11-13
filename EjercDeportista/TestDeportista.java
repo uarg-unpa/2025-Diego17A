@@ -17,10 +17,10 @@ public class TestDeportista {
         System.out.println("------Carga de datos de deportista------");
         System.out.println ("Ingrese datos del deportista 1 \nNombre:");
         String nombre = scanner.nextLine();
-        System.out.println ("Edad:");
-        int edad = scanner.nextInt();
         System.out.println ("Deporte:");
         String deporte = scanner.nextLine();
+        System.out.println ("Edad:");
+        int edad = scanner.nextInt();
         System.out.println ("Puntaje:");
         int puntos = scanner.nextInt();
 
@@ -30,10 +30,10 @@ public class TestDeportista {
 
         System.out.println ("Ingrese datos del deportista 2 \nNombre:");
         String nombre2 = scanner.nextLine();
-        System.out.println ("Edad:");
-        int edad2 = scanner.nextInt();
         System.out.println ("Deporte:");
         String deporte2 = scanner.nextLine();
+        System.out.println ("Edad:");
+        int edad2 = scanner.nextInt();
         System.out.println ("Puntaje:");
         int puntos2 = scanner.nextInt();
         
@@ -47,10 +47,10 @@ public class TestDeportista {
 
         System.out.println("---Comparacion por experiencia/puntaje---");
         if (D1.esMasExperimentado(D2)){
-            System.out.println("El Deportista: " + D1.getnombre()+ "tiene mayor puntaje que el deportista "+D2.getnombre());
+            System.out.println("El Deportista: " + D1.getnombre()+ " tiene mayor puntaje que el deportista "+D2.getnombre());
         }
          else{
-            System.out.println("El Deportista: " + D2.getnombre()+ "tiene mayor puntaje que el deportista "+D1.getnombre());
+            System.out.println("El Deportista: " + D2.getnombre()+ " tiene mayor puntaje que el deportista "+D1.getnombre());
         } 
         if (D1.getedad()>= 18){
             dep++;
