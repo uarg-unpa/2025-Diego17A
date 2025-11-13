@@ -48,12 +48,21 @@ public class TestAuto{
         scanner.nextLine();
 
         if (A1.esMasRapidoQue(A2)){
-            if (A1.esMasRapidoQue (A3)){
+            if (A1.esMasRapidoQue(A3)){
                 System.out.println(" El auto mas rapido es el: "+A1.getmarca() +A1.getmodelo() +" con una velocidad maxima de: "+ A1.getvelmax());    
             }
             else{
-                
+                 System.out.println(" El auto mas rapido es el: "+A3.getmarca() +A3.getmodelo() +" con una velocidad maxima de: "+ A3.getvelmax());    
+                } 
+        }
+        else{
+            if (A2.esMasRapidoQue(A3)){
+                System.out.println(" El auto mas rapido es el: "+A2.getmarca() +A2.getmodelo() +" con una velocidad maxima de: "+ A2.getvelmax());
             }
-
+            else{
+                System.out.println(" El auto mas rapido es el: "+A3.getmarca() +A3.getmodelo() +" con una velocidad maxima de: "+ A3.getvelmax());    
+               } 
+        }
+        scanner.close();    
     }
 }
