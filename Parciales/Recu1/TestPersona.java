@@ -57,18 +57,18 @@ public class TestPersona {
             }
         }
         if(P2.calcularIMC()== -1){
-            System.out.println("La persona 1 esta debajo de su peso ideal");
+            System.out.println("La persona 2 esta debajo de su peso ideal");
         }
         else{
             if(P2.calcularIMC()== 0){
-                System.out.println("La persona 1 esta en su peso ideal");
+                System.out.println("La persona 2 esta en su peso ideal");
             }
             else{
-                System.out.println("La persona 1 tiene sobrepeso");
+                System.out.println("La persona 2 tiene sobrepeso");
             }
         }
 
-        System.out.println("Numero de personas mayores de edad");
+        System.out.println("---Numero de personas mayores de edad---");
         if (P1.esMayorDeEdad()){
             aux++;
             if (P2.esMayorDeEdad()){
@@ -82,7 +82,7 @@ public class TestPersona {
         }
         System.out.println("La cantidad de personas mayores de 18 años es: " +aux);
 
-        System.out.println("Comparacion de personas por su edad ");
+        System.out.println("---Comparacion de personas por su edad---");
         if (P1.esMayorQue(P2)){
             System.out.println("La persona 1  " + P1.getapellido()+ " es mayor que la persona 2 "+P2.getapellido());
         }
@@ -90,6 +90,5 @@ public class TestPersona {
             System.out.println("La persona  2 " + P2.getapellido()+ " es mayor que la persona 1 "+P1.getapellido());
         } 
         scanner.close();
-
     }
 }
