@@ -13,7 +13,6 @@ public class TestDeportista {
 
         Scanner scanner = new Scanner(System.in);
         int dep = 0;
-        
         System.out.println("------Carga de datos de deportista------");
         System.out.println ("Ingrese datos del deportista 1 \nNombre:");
         String nombre = scanner.nextLine();
