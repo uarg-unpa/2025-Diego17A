@@ -63,6 +63,7 @@ public class TestEmpresa2 {
             System.out.println("3. Empleado 3");
             System.out.println("0. Salir");
             opcion = scanner.nextInt();
+            scanner.nextLine();
             switch (opcion){
                 case 1:
                 System.out.println("Selecione con quien se va a comparar: \n Empleado 2 (A2) o Empleado 3 (A3)");
