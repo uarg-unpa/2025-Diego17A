@@ -1,0 +1,56 @@
+package Clases.Pilas;
+
+public class PilaEnteros {
+    private int[] elementos; // Array (vector) para almacenar los elementos
+    private int cima;  // ultimo elemento insertado
+    private final int MAX = 5; // Capacidad máxima de la pila
+
+    // Constructor: inicializa el array y la cima
+    public PilaEnteros() {
+        elementos = new int[MAX]; // Crear el array
+        // Completar: inicializar cima
+        cima = -1;
+    }
+
+    // Verifica si la pila está vacía
+    public boolean estaVacia() {
+        // Completar: devolver true si cima indica que la pila está vacía 
+        return (cima == -1);
+    }
+
+    // Verifica si la pila está llena
+    public boolean estaLlena() {
+        // Completar: devolver true si cima está en el límite del array
+        return (cima == MAX -1);
+    
+    }
+
+    // Agrega un elemento en la cima (push)
+    public void meter(int elem) {
+              // Completar: incrementar cima y asignar el elemento
+        cima ++;
+        elementos [cima] = elem;
+    }
+
+    // Saca y devuelve el elemento de la cima (pop)
+    public int sacar() {
+                  // Completar: guardar el elemento de la cima, decrementar cima y devolverlo
+        int aux = elementos [cima];
+        cima --;
+        return aux;
+    }
+     public void mostrar(){
+        PilaEnteros aux = new PilaEnteros();
+        int elemento, elemento2;
+        while(!estaVacia()){
+            elemento = sacar();
+            System.out.print(elemento + "");
+            aux.meter(elemento);    
+        }
+        while(!aux.estaVacia()){
+            elemento2 = aux.sacar();
+            meter (elemento2);
+            //insertar(aux.borrar());
+        }
+    }
+} 
