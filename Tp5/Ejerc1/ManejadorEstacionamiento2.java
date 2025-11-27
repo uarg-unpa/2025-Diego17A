@@ -2,7 +2,7 @@ package Tp5.Ejerc1;
 
 public class ManejadorEstacionamiento2 {
 
-     private Vehiculo[] vehiculos;   // ahora es un vector de OBJETOS Vehiculo
+    private Vehiculo[] vehiculos;   // ahora es un vector de OBJETOS Vehiculo
     private int capacidad;
     private int next;
 
