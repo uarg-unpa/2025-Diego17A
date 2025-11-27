@@ -27,8 +27,8 @@ public class Persona {
         this.altura=0.0;
     }
     //get y set
-   public void setnombre(String a){
-    this.nombre = a;
+    public void setnombre(String a){
+        this.nombre = a;
      }
     public String getnombre(){
         return this.nombre;
