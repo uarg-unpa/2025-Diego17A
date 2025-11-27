@@ -101,7 +101,7 @@ public class ManejadorEstacionamiento {
            // j será el índice en el nuevo vector
            int j = 0;
    
-           // Recorremos TODO el vector original
+           // Recorremos todo el vector original
            for (int i = 0; i < capacidad; i++) {
    
                // Solo copiamos valores NO nulos
