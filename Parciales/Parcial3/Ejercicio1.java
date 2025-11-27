@@ -16,7 +16,7 @@ public class Ejercicio1 {
         for (int i = 0; i < n; i++) {
             v[i] = scanner.nextInt();
         }
-        System.out.println("Negativos: " + contarNeg(v, 0));
+        System.out.println("Cantidad de negativos: " + contarNeg(v, 0));
 
         scanner.close();
     }
